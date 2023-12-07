@@ -4,6 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Box (ilrosch)</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="home" id="page-description">
+      <div class="container">
+        <div class="header">
+          <div class="header-block">
+            <a class="header-logo">
+              <img src="images/logo.svg" alt="Logo Music Box" />
+              <div class="header-text white upper">Music Box</div>
+            </a>
+
+            <ul class="header-menu">
+              <li class="header-text dark-grey upper transition-color"><a href="#">Главная</a></li>
+              <li class="header-text dark-grey upper transition-color"><a href="#">Каталог</a></li>
+              <li class="header-text dark-grey upper transition-color"><a href="#">Исполнители</a></li>
+              <li class="header-text dark-grey upper transition-color"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="header-search">
+            <input type="text" class="dark upper" placeholder="Поиск..." />
+          </div>
+        </div>
+
+        <div class="promo">
+          <h1 class="white upper">Онлайн музыка где угодно</h1>
+          <h2 class="white upper mb-30">без ограничений</h2>
+          <p class="font-16px white mb-18">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+
+          <form action="#" class="form">
+            <div class="form-inputs">
+              <div>
+                <label for="name">Введите ваше имя</label>
+                <input type="text" class="font-14px white" id="name" placeholder="Имя" />
+              </div>
+
+              <div>
+                <label for="email">Введите ваш email</label>
+                <input type="email" class="font-14px white" id="email" placeholder="Email" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-full btn-big btn-green font-14px white upper">Получить доступ</button>
+          </form>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

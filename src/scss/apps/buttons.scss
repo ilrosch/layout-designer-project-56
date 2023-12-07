@@ -1,0 +1,18 @@
+.btn {
+  outline: none;
+  border: none;
+  border-radius: var(--br-5);
+  cursor: pointer;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-big {
+  padding: 21px;
+}
+
+.btn-green {
+  background: var(--green);
+}

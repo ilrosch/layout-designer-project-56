@@ -14,7 +14,25 @@ body {
 
 body {
   font-family: Roboto, sans-serif;
+  font-weight: var(--font-400);
   line-height: var(--lh-normal);
   color: var(--dark-grey);
   background: var(--black);
+}
+
+header,
+section,
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
 }

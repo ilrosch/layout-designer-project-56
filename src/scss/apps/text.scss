@@ -2,21 +2,41 @@
 h1 {
   font-size: var(--h1-d-size);
   line-height: var(--h1-d-lh);
+
+  @media (width <= 600px) {
+    font-size: var(--h1-m-size);
+    line-height: var(--h1-m-lh);
+  }
 }
 
 h2 {
   font-size: var(--h2-d-size);
   line-height: var(--h2-d-lh);
+
+  @media (width <= 600px) {
+    font-size: var(--h2-m-size);
+    line-height: var(--h2-m-lh);
+  }
 }
 
 h3 {
   font-size: var(--h3-d-size);
   line-height: var(--h3-d-lh);
+
+  @media (width <= 600px) {
+    font-size: var(--h3-m-size);
+    line-height: var(--h3-m-lh);
+  }
 }
 
 h4 {
   font-size: var(--h4-d-size);
   line-height: var(--h4-d-lh);
+
+  @media (width <= 600px) {
+    font-size: var(--h4-m-size);
+    line-height: var(--h4-m-lh);
+  }
 }
 
 /* Трансформация текста */
@@ -44,4 +64,21 @@ h4 {
 /* Цвет текста */
 .white {
   color: var(--white);
+}
+
+.dark-grey {
+  color: var(--dark-grey);
+}
+
+.dark {
+  color: var(--dark);
+}
+
+/* Размер текста */
+.font-14px {
+  font-size: var(--size-14);
+}
+
+.font-16px {
+  font-size: var(--size-16);
 }
