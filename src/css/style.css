@@ -43,6 +43,7 @@
   /* Размеры шрифтов для десктопов */
   --h1-d-size: 60px;
   --h2-d-size: 38px;
+  --h3-big-d-size: 30px;
   --h3-d-size: 24px;
   --h4-d-size: 18px;
   --size-16px: 16px;
@@ -139,6 +140,10 @@ input {
   }
 }
 
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -157,6 +162,10 @@ input {
   margin-bottom: 45px;
 }
 
+.mb-48 {
+  margin-bottom: 48px;
+}
+
 .mb-64 {
   margin-bottom: 64px;
 }
@@ -169,6 +178,10 @@ input {
   .mb-200 {
     margin-bottom: 203px;
   }
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 /* Стили для текста */
@@ -203,7 +216,7 @@ h3 {
 
 @media (width <= 600px) {
   h3 {
-    font-size: var(--h3-m-size);
+    font-size: var(--h3-m-size) !important;
     line-height: var(--h3-m-lh);
   }
 }
@@ -259,6 +272,10 @@ h4 {
   color: var(--dark);
 }
 
+.orange {
+  color: var(--orange);
+}
+
 /* Размер текста */
 .font-14px {
   font-size: var(--size-14);
@@ -268,10 +285,19 @@ h4 {
   font-size: var(--size-16);
 }
 
+.h3-big {
+  font-size: var(--h3-big-d-size);
+}
+
 /* Текст */
 .text-small {
   font-size: 12.8px;
   line-height: 150%;
+}
+
+.text-small-2 {
+  font-size: 12px;
+  line-height: 160%;
 }
 
 .text-1 {
@@ -295,6 +321,10 @@ h4 {
   width: 100%;
 }
 
+.btn-small {
+  padding: 16px 30px;
+}
+
 .btn-big {
   padding: 20px 30px;
 }
@@ -304,8 +334,15 @@ h4 {
 }
 
 .btn-transparent {
-  border: 1px solid var(--white);
   background: transparent;
+}
+
+.btn-br-white {
+  border: 1px solid var(--white);
+}
+
+.btn-br-grey {
+  border: 1px solid var(--dark-grey);
 }
 
 /* Стили для первой секции сайта (шапка и баннер) */
@@ -482,10 +519,6 @@ h4 {
 }
 
 /* Стили для секции "Формы подписки" */
-.pricing {
-  padding-top: 100px;
-}
-
 .pricing-body {
   display: flex;
   flex-wrap: wrap;
@@ -535,4 +568,52 @@ h4 {
 
 .bg-premium {
   background-image: url("../images/subscribe_3.png");
+}
+
+/* Стили секции "последние новости" */
+.news-body {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.news-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.news-item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+@media (width <= 900px) {
+  .news-item {
+    max-width: 575px;
+    flex-direction: column !important;
+    margin: 0 auto;
+  }
+}
+
+.news-photo {
+  max-width: 575px;
+  width: 100%;
+  max-height: 290px;
+  height: 100%;
+}
+
+.news-block {
+  padding-bottom: 18px;
+}
+
+@media (width <= 900px) {
+  .news-block {
+    padding-bottom: 0;
+  }
+}
+
+.news-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
