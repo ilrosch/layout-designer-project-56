@@ -130,6 +130,10 @@ input {
 }
 
 /* Отступы */
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-18 {
   margin-bottom: 18px;
 }
@@ -329,8 +333,16 @@ h4 {
   padding: 20px 30px;
 }
 
+.btn-app {
+  padding: 16px 40px;
+}
+
 .btn-green {
   background: var(--green);
+}
+
+.btn-red {
+  background: var(--red);
 }
 
 .btn-transparent {
@@ -343,6 +355,10 @@ h4 {
 
 .btn-br-grey {
   border: 1px solid var(--dark-grey);
+}
+
+.btn-br-50 {
+  border-radius: var(--br-50);
 }
 
 /* Стили для первой секции сайта (шапка и баннер) */
@@ -616,4 +632,48 @@ h4 {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+/* Стили для секции "моблиьное приложение" */
+.app-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+@media (width <= 690px) {
+  .app-body {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.app-img {
+  max-width: 333px;
+  max-height: 278px;
+  margin-right: 123px;
+}
+
+@media (width <= 1200px) {
+  .app-img {
+    margin-right: 0;
+  }
+}
+
+@media (width <= 690px) {
+  .app-img {
+    flex-direction: column-reverse;
+  }
+}
+
+.app-block {
+  max-width: 600px;
+  width: 100%;
+  padding-top: 16px;
+}
+
+@media (width <= 690px) {
+  .app-block {
+    padding-top: 0;
+  }
 }

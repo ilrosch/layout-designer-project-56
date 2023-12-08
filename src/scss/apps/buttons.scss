@@ -17,8 +17,16 @@
   padding: 20px 30px;
 }
 
+.btn-app {
+  padding: 16px 40px;
+}
+
 .btn-green {
   background: var(--green);
+}
+
+.btn-red {
+  background: var(--red);
 }
 
 .btn-transparent {
@@ -31,4 +39,8 @@
 
 .btn-br-grey {
   border: 1px solid var(--dark-grey);
+}
+
+.btn-br-50 {
+  border-radius: var(--br-50);
 }
