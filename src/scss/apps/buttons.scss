@@ -10,9 +10,14 @@
 }
 
 .btn-big {
-  padding: 21px;
+  padding: 20px 30px;
 }
 
 .btn-green {
   background: var(--green);
+}
+
+.btn-transparent {
+  border: 1px solid var(--white);
+  background: transparent;
 }

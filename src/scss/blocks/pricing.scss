@@ -1,0 +1,55 @@
+/* Стили для секции "Формы подписки" */
+.pricing {
+  padding-top: 100px;
+
+  &-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &-item {
+    min-width: 280px;
+    max-width: 400px;
+    width: calc(33.3333% - 33.3333px);
+    flex: 1 1 280px;
+    padding: 24px 1.5rem 64px;
+    border-radius: var(--br-1);
+
+    ///
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (width <= 600px) {
+      padding-top: 16px;
+    }
+  }
+
+  &-price {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &-number {
+    font-size: 64px;
+    line-height: 100%;
+  }
+
+  &-value {
+    line-height: 1em;
+  }
+}
+
+.bg-free {
+  background-image: url("../images/subscribe_1.png");
+}
+
+.bg-standard {
+  background-image: url("../images/subscribe_2.png");
+}
+
+.bg-premium {
+  background-image: url("../images/subscribe_3.png");
+}

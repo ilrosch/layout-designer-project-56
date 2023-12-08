@@ -66,6 +66,7 @@
   --h3-m-lh: 24px;
 
   /* Скругление углов */
+  --br-1: 1rem;
   --br-3: 3px;
   --br-5: 5px;
   --br-50: 50px;
@@ -148,6 +149,28 @@ input {
   }
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+@media (width <= 600px) {
+  .mb-200 {
+    margin-bottom: 203px;
+  }
+}
+
 /* Стили для текста */
 h1 {
   font-size: var(--h1-d-size);
@@ -197,6 +220,10 @@ h4 {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Трансформация текста */
 .upper {
   text-transform: uppercase;
@@ -241,6 +268,22 @@ h4 {
   font-size: var(--size-16);
 }
 
+/* Текст */
+.text-small {
+  font-size: 12.8px;
+  line-height: 150%;
+}
+
+.text-1 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.text-3 {
+  font-size: 32px;
+  line-height: 150%;
+}
+
 .btn {
   outline: none;
   border: none;
@@ -253,11 +296,16 @@ h4 {
 }
 
 .btn-big {
-  padding: 21px;
+  padding: 20px 30px;
 }
 
 .btn-green {
   background: var(--green);
+}
+
+.btn-transparent {
+  border: 1px solid var(--white);
+  background: transparent;
 }
 
 /* Стили для первой секции сайта (шапка и баннер) */
@@ -431,4 +479,60 @@ h4 {
 
 .home .promo .form-inputs input::placeholder {
   color: inherit;
+}
+
+/* Стили для секции "Формы подписки" */
+.pricing {
+  padding-top: 100px;
+}
+
+.pricing-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.pricing-item {
+  min-width: 280px;
+  max-width: 400px;
+  width: calc(33.3333% - 33.3333px);
+  flex: 1 1 280px;
+  padding: 24px 1.5rem 64px;
+  border-radius: var(--br-1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (width <= 600px) {
+  .pricing-item {
+    padding-top: 16px;
+  }
+}
+
+.pricing-price {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pricing-number {
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.pricing-value {
+  line-height: 1em;
+}
+
+.bg-free {
+  background-image: url("../images/subscribe_1.png");
+}
+
+.bg-standard {
+  background-image: url("../images/subscribe_2.png");
+}
+
+.bg-premium {
+  background-image: url("../images/subscribe_3.png");
 }

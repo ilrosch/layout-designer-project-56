@@ -29,3 +29,23 @@
     margin-bottom: 16px;
   }
 }
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+
+  @media (width <= 600px) {
+    margin-bottom: 203px;
+  }
+}
