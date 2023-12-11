@@ -801,3 +801,41 @@ h4 {
     padding-top: 0;
   }
 }
+
+.popular-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px 50px;
+}
+
+.popular-track {
+  min-width: 250px;
+  max-width: calc(50% - 25px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (width <= 600px) {
+  .popular-track {
+    max-width: 100%;
+  }
+}
+
+.popular-track img {
+  width: 55px;
+  height: 55px;
+}
+
+.track-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-info h3 {
+  font-size: 12.8px !important;
+}
