@@ -82,6 +82,10 @@ h4 {
   color: var(--orange);
 }
 
+.grey {
+  color: var(--grey);
+}
+
 /* Размер текста */
 .font-14px {
   font-size: var(--size-14);
@@ -89,6 +93,11 @@ h4 {
 
 .font-16px {
   font-size: var(--size-16);
+}
+
+.font-18px {
+  font-size: var(--h4-d-size);
+  line-height: 150%;
 }
 
 .h3-big {
