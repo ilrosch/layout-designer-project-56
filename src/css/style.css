@@ -130,6 +130,10 @@ input {
 }
 
 /* Отступы */
+.mb-1 {
+  margin-bottom: 1px;
+}
+
 .mb-15 {
   margin-bottom: 15px;
 }
@@ -842,20 +846,32 @@ h4,
 }
 
 /* Стили для секции discography */
-.discography-body {
+.discography-body,
+.similar-body {
   align-items: flex-start;
 }
 
-.discography-item {
+.discography-item,
+.similar-item {
   max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
 }
 
 @media (width <= 600px) {
-  .discography-item {
+  .discography-item,
+  .similar-item {
     max-width: 137px;
+    gap: 18px;
   }
 }
 
-.discography-item img {
+.discography-item img,
+.similar-item img {
   width: 100%;
+}
+
+.similar-item {
+  gap: 18px;
 }
