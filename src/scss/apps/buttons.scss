@@ -21,12 +21,23 @@
   padding: 16px 40px;
 }
 
+.btn-artist {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
 .btn-green {
   background: var(--green);
 }
 
 .btn-red {
   background: var(--red);
+}
+
+.btn-purple {
+  background: var(--purple);
 }
 
 .btn-transparent {

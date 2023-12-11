@@ -426,12 +426,23 @@ h4 {
   padding: 16px 40px;
 }
 
+.btn-artist {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
 .btn-green {
   background: var(--green);
 }
 
 .btn-red {
   background: var(--red);
+}
+
+.btn-purple {
+  background: var(--purple);
 }
 
 .btn-transparent {
@@ -452,7 +463,6 @@ h4 {
 
 /* Стили для первой секции сайта (шапка и баннер) */
 .home {
-  background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -566,12 +576,17 @@ h4 {
 
 .home .promo {
   padding: 200px 0;
-  text-align: center;
 }
 
 @media (width <= 538px) {
   .home .promo {
     padding: 247px 0 200px;
+  }
+}
+
+@media (width <= 538px) {
+  .home .promo-artist {
+    padding: 225px 0;
   }
 }
 
@@ -621,6 +636,26 @@ h4 {
 
 .home .promo .form-inputs input::placeholder {
   color: inherit;
+}
+
+.home .promo-btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.home .promo-btns button > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.bg-home {
+  background-image: url("../images/banner.png");
+}
+
+.bg-artist {
+  background-image: url("../images/Morten Harket.png");
 }
 
 /* Стили для секции "Формы подписки" */

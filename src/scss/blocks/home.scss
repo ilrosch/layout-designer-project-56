@@ -1,7 +1,6 @@
 /* Стили для первой секции сайта (шапка и баннер) */
 
 .home {
-  background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -115,11 +114,14 @@
   .promo {
     padding: 200px 0;
 
-    ///
-    text-align: center;
-
     @media (width <= 538px) {
       padding: 247px 0 200px;
+    }
+
+    &-artist {
+      @media (width <= 538px) {
+        padding: 225px 0;
+      }
     }
 
     .form {
@@ -173,5 +175,25 @@
         }
       }
     }
+
+    &-btns {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+
+      button > svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
+}
+
+.bg-home {
+  background-image: url("../images/banner.png");
+}
+
+.bg-artist {
+  background-image: url("../images/Morten Harket.png");
 }
