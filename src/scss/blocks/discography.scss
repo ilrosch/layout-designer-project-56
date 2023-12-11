@@ -1,0 +1,18 @@
+/* Стили для секции discography */
+.discography {
+  &-body {
+    align-items: flex-start;
+  }
+
+  &-item {
+    max-width: 250px;
+
+    @media (width <= 600px) {
+      max-width: 137px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

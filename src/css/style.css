@@ -305,15 +305,16 @@ h3 {
   }
 }
 
-h4 {
+h4,
+.h4 {
   font-size: var(--h4-d-size);
   line-height: var(--h4-d-lh);
 }
 
 @media (width <= 600px) {
-  h4 {
-    font-size: var(--h4-m-size);
-    line-height: var(--h4-m-lh);
+  h4,
+  .h4 {
+    line-height: 150%;
   }
 }
 
@@ -838,4 +839,23 @@ h4 {
 
 .track-info h3 {
   font-size: 12.8px !important;
+}
+
+/* Стили для секции discography */
+.discography-body {
+  align-items: flex-start;
+}
+
+.discography-item {
+  max-width: 250px;
+}
+
+@media (width <= 600px) {
+  .discography-item {
+    max-width: 137px;
+  }
+}
+
+.discography-item img {
+  width: 100%;
 }
