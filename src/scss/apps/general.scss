@@ -64,10 +64,6 @@
 
 .mb-200 {
   margin-bottom: 200px;
-
-  @media (width <= 600px) {
-    margin-bottom: 203px;
-  }
 }
 
 .pt-100 {
@@ -80,7 +76,7 @@
 
 /* Стили секции footer */
 .footer {
-  padding: 3rem 0 2rem;
+  padding: 4rem 0 3rem;
 
   &-body {
     display: grid;

@@ -119,6 +119,8 @@
     }
 
     &-artist {
+      padding: 250px 0 225px;
+
       @media (width <= 538px) {
         padding: 225px 0;
       }
