@@ -628,6 +628,7 @@ h4,
 .home .promo .form-inputs label {
   display: block;
   width: 0;
+  height: 0;
   font-size: 0;
 }
 
